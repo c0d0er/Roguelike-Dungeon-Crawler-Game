@@ -1,0 +1,148 @@
+@mixin center {text-align: center;}
+
+$dark: #333;
+$darker: #222;
+$boarder: 10px solid #333;
+
+body {
+	@include center;
+	background-color: #1d1d1d;
+	color: white;
+}
+
+.rogue{
+		padding-top: 30px;
+}
+
+.d4{
+	padding-top: 10px;
+	padding-bottom: 30px;
+}
+
+.display{
+  		position: relative;
+  		max-width: 860px;
+  		margin: 0 auto;
+}
+
+.text{
+	display: flex;
+	justify-content: center;
+	background: #333;
+    max-width: 860px;
+    margin: 0 auto;
+}
+
+.title{
+	text-align: left;
+	font-size: 19px;
+	background-color: $dark;
+	margin-top: 0px;
+}
+
+.level{
+	padding-left: 10px;
+}
+
+.level, .xp{
+	width: 90px;
+}
+
+.health, .attack, .dungeon{
+	width: 120px;
+}
+
+.weapon{
+	width: 140px;
+}
+
+.toggle{
+	cursor: pointer;
+	width: 140px;
+}
+
+table{
+	border: $boarder;
+	margin-right: auto; 
+    margin-left: auto;
+    background-image: url('http://cdn.backgroundhost.com/backgrounds/subtlepatterns/woven.png')
+}
+
+td {
+	width: 1.5em;
+    height: 1.5em;
+}
+
+.walls{
+	background-color: #647687;
+}
+
+.player{
+	background-color: green;
+}
+
+/*.monsters{
+//position: absolute;
+ // display: block;
+ // width: 32px;
+ // height: 32px;
+  //background: url("https://i.imgsafe.org/138f718c53.png") no-repeat -32px 0px;	
+}*/
+
+.monsters{
+	background-color: red;
+	//background-size: 100%;
+	//background-image: url('http://2static.fjcdn.com/pictures/D_ee5cce_5599615.jpg');
+}
+
+.potions{
+	background-color: purple;
+}
+.weapons{
+	background-color: blue;
+}
+.doors{
+	background-color: white;
+}
+.boss{
+	background-color: #FFD700;
+}
+
+.black {
+//background: black !important;//more powerful can overcome background-image in the table!!!
+background-color: black !important;
+}
+
+/* The Modal (background) */
+.modal1 {
+    display: none; /* Hidden by default */
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+}
+
+/* Modal Content */
+.modal-content1 {
+    height: 100%;
+    border: 10px solid #333;
+    background-color: black;
+}
+  
+.modal-body1 {padding: 2px 16px;}
+
+.won, .lost{
+padding-top: 10%;
+}
+
+.replay{
+		margin: 0;
+		position: absolute;
+	    top: 50%;
+ 	    left: 50%;
+	    margin-right: -50%;
+	    transform: translate(-50%, -50%);
+	    cursor: pointer;
+}
+
